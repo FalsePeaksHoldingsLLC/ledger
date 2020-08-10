@@ -9,6 +9,7 @@ class Ledger(object):
     ROOT_PATH='/root/data/staging/'
 
     spark = SparkSession.builder.getOrCreate()
+    spark.conf.set( "spark.sql.crossJoin.enabled" , "true" )
     amexTarget = AmexTarget(target=ROOT_PATH)
     tagsTarget = TagsTarget(target=ROOT_PATH)
 
@@ -17,7 +18,8 @@ class Ledger(object):
 
     queries = [
         ('amex', True),
-        ('tags', True)
+        ('tags', True),
+        ('enrich', False)
     ]
     data_frames=[]
     for query_name, tempView in queries:
@@ -28,7 +30,7 @@ class Ledger(object):
         data_frames.append(data_frame)
     results = data_frames[-1]
 
-    results.show()
+    results.write.csv(path=ROOT_PATH + 'ledger', header=True)
 
 if __name__ == '__main__':
     Ledger()

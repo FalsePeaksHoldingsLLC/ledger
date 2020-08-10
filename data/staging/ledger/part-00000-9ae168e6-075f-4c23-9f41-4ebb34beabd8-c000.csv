@@ -1,0 +1,14 @@
+date,description,type,amount,account_type,account_action
+2020-07-08,sun basket          san jose            ca,grocery,89.73,amex,debit
+2020-07-03,gglpay eataly chicagchicago             il,grocery,19.73,amex,debit
+2020-07-03,uncorkit / souvenir chicago             il,alcohol,22.37,amex,debit
+2020-07-01,digitalocean.com    new york city       ny,website,5.0,amex,debit
+2020-06-30,paypal *uber eats   8665761039          ca,restaurant,5.0,amex,debit
+2020-06-30,paypal *uber eats   8665761039          ca,restaurant,10.44,amex,debit
+2020-06-22,online payment - thank you,payment,-142.38,amex,credit
+2020-06-20,uber eats           san francisco       ca,restaurant,5.0,amex,debit
+2020-06-20,uber eats           san francisco       ca,restaurant,15.22,amex,debit
+2020-06-17,paypal *ny times    8006984637          ny,"",2.0,amex,debit
+2020-06-17,sun basket          san jose            ca,grocery,120.16,amex,debit
+2020-06-15,online payment - thank you,payment,-98.76,amex,credit
+2020-06-10,sun basket          san jose            ca,grocery,93.76,amex,debit

@@ -1,6 +1,7 @@
 SELECT
     date,
     LOWER(description) AS description,
-    amount
+    amount,
+    'amex' AS account_type
 FROM
     amex
